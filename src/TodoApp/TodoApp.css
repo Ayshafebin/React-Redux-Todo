@@ -1,0 +1,22 @@
+.todo-app-list{
+    background-color: black;
+    height: 95vh;
+    width: 100%;
+    padding-top: 5vh;
+}
+
+.todoapp{
+    max-Width: '200px';
+    /* margin: 'auto'; */
+    /* padding: '20px'; */
+    font-Family: 'Arial, sans-serif';
+    background-color: rgb(115, 96, 237);
+    flex-direction: column;
+    
+}
+
+.todo-text{
+    text-Align: 'center';
+    color: '#333';
+    justify-content: center;
+}
