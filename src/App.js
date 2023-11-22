@@ -21,11 +21,11 @@ function App() {
     }
   };
 
-  const handleDeleteTodo = (id) => {
+  const handleDeletetodo = (id) => {
     dispatch(deleteTodo(id));
   };
 
-  const handleEditTodo = (id, text) => {
+  const handleEdittodo = (id, text) => {
     setNewTodo(text);
     setEdit(id);
   };
@@ -61,13 +61,13 @@ function App() {
         <span>{todo.text}</span>
         <div>
           <button
-            onClick={() => handleDeleteTodo(todo.id)}
+            onClick={() => handleDeletetodo(todo.id)}
             style={{ backgroundColor: '#f44336', color: 'white', padding: '5px 8px', cursor: 'pointer', border: 'none', borderRadius: '4px' }}
           >
             Delete
           </button>
           <button
-            onClick={() => handleEditTodo(todo.id, todo.text)}
+            onClick={() => handleEdittodo(todo.id, todo.text)}
             style={{ backgroundColor: '#2196F3', color: 'white', padding: '5px 8px', cursor: 'pointer', border: 'none', borderRadius: '4px', marginLeft: '5px' }}
           >
             Edit
